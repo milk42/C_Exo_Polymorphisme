@@ -10,24 +10,23 @@ namespace ExoPolymorphisme
     {
         private string nom;
         private string prenom;
-        private string date_naissance;
+        private DateTime dateNaissance;
 
-        public string Nom { get { return this.Nom; }}
-        public string Prenom { get { return this.Prenom; } }
-        public string Date_naissance { get { return this.Date_naissance; } }
+        public string Nom { get { return this.nom; }}
+        public string Prenom { get { return this.prenom; } }
+        public string DateNaissance { get { return this.dateNaissance; } }
 
-        public Personne(string nom, string prenom, string date_naissance)
+        public Personne(string nom, string prenom, string dateNaissance)
         {
             this.nom = nom;
             this.prenom = prenom;
-            this.date_naissance = date_naissance;
+            this.dateNaissance = dateNaissance;
         }
 
         public string Afficher()
         {
-            return "Depuis la classe Personne =>\n Nom : " + Nom + ";\nPrénom : " + Prenom + ";\nDate de naissance : " + Date_naissance;
+            return "Depuis la classe Personne =>\n Nom : " + Nom + ";\nPrénom : " + Prenom + ";\nDate de naissance : " + DateNaissance;
         }
-
 
     }
 }
