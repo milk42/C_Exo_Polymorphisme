@@ -14,7 +14,7 @@ namespace ExoPolymorphisme
 
         public string Nom { get { return this.nom; }}
         public string Prenom { get { return this.prenom; } }
-        public string DateNaissance { get { return this.dateNaissance; } }
+        public DateTime DateNaissance { get { return this.dateNaissance; } }
 
         public Personne(string nom, string prenom, string dateNaissance)
         {
@@ -23,10 +23,9 @@ namespace ExoPolymorphisme
             this.dateNaissance = dateNaissance;
         }
 
-        public string Afficher()
+        public void Afficher()
         {
-            return "Depuis la classe Personne =>\n Nom : " + Nom + ";\nPrénom : " + Prenom + ";\nDate de naissance : " + DateNaissance;
+            Console.WriteLine($"\nNom : {this.nom}\nPrenom : {this.prenom}\nDate de naissance : {this.dateNaissance.ToString("dd/MM/yyyy")}");
         }
-
     }
 }
