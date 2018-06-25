@@ -10,7 +10,7 @@ namespace ExoPolymorphisme
     {
         static void Main(string[] args)
         {
-
+            // J'ai mis un DateTime.Now car je n'ai pas trouvé le bon format de date de base en C#
             Personne[] personnes = new Personne[8];
             personnes[0] = new Employe("Fogham", "souleimane", DateTime.Now, 10000);
             personnes[1] = new Employe("Fogham", "souleimane", DateTime.Now, 10000);
@@ -24,17 +24,21 @@ namespace ExoPolymorphisme
             personnes[7] = new Directeur("Fogham", "souleimane", DateTime.Now, 10000, "dev", "SARL");
 
 
+
+            // Entrainement boucle foreach sur un tableau
             foreach (Personne p in personnes)
             {
                 Console.WriteLine(p);
            
             }
-
+            // Entrainement boucle for sur un tableau
+            // .length pour un tableau / .Count pour une liste
             for(int i = 0; i < personnes.Length; i++)
             {
                 personnes[i].Afficher();
             }
 
+            // pour que la console reste ouverte au lancement du projet
             Console.ReadLine();
         }
     }

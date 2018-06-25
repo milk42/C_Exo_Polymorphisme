@@ -8,6 +8,7 @@ namespace ExoPolymorphisme
 {
     class Directeur : Chef
     {
+        // Les attributs peuvent être notés avec un underscore par convention
         private string _societe;
 
         public string Societe { get { return this._societe; } }
