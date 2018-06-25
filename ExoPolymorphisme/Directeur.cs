@@ -17,6 +17,7 @@ namespace ExoPolymorphisme
 
         public override string Afficher()
         {
+            // redéfinir en ajoutant société
             return base.Afficher();
         }
     }

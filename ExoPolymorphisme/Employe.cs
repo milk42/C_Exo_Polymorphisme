@@ -18,6 +18,7 @@ namespace ExoPolymorphisme
 
         public override string Afficher()
         {
+            // redéfinir en ajoutant salaire
             return "Depuis la classe Personne =>\n Nom : " + Nom + ";\nPrénom : " + Prenom + ";\nDate de naissance : " + Date_naissance + ";\nSalaire = " + salaire;
         }
 

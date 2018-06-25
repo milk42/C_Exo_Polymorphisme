@@ -17,6 +17,7 @@ namespace ExoPolymorphisme
 
         public override string Afficher()
         {
+            // redéfinir en ajoutant service
             return base.Afficher();
         }
     }

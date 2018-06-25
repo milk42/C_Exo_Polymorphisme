@@ -14,9 +14,9 @@ namespace ExoPolymorphisme
 
         public string Nom { get { return this.nom; }}
         public string Prenom { get { return this.prenom; } }
-        public string DateNaissance { get { return this.dateNaissance; } }
+        public string DateNaissance { get { return this.DateNaissance; } }
 
-        public Personne(string nom, string prenom, string dateNaissance)
+        public Personne(string nom, string prenom, DateTime dateNaissance)
         {
             this.nom = nom;
             this.prenom = prenom;
