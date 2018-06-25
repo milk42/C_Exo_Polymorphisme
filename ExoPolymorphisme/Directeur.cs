@@ -8,17 +8,21 @@ namespace ExoPolymorphisme
 {
     class Directeur : Chef
     {
-        private string societe;
+        private string _societe;
 
-        public string Societe { get { return this.Societe; } }
-        public Directeur(string nom, string prenom, string date_naissance, int salaire, string service, string societe) : base(nom, prenom, date_naissance, salaire, service)
+        public string Societe { get { return this._societe; } }
+
+        public Directeur(string nom, string prenom, DateTime dateNaissance, double salaire, string service, string societe) : base(nom, prenom, dateNaissance, salaire, service)
         {
+            this._societe = societe;
         }
 
-        public override string Afficher()
+        public override void Afficher()
         {
             // redéfinir en ajoutant société
-            return base.Afficher();
+            base.Afficher();
+            Console.WriteLine($" Société : {this._societe}");
+
         }
     }
 }

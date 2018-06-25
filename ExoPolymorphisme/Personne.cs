@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ExoPolymorphisme
 {
-    public abstract class Personne
+    public class Personne
     {
         private string nom;
         private string prenom;
         private DateTime dateNaissance;
 
-        public string Nom { get { return this.nom; }}
+        public string Nom { get { return this.nom; } }
         public string Prenom { get { return this.prenom; } }
-        public string DateNaissance { get { return this.DateNaissance; } }
+        public DateTime DateNaissance { get { return this.dateNaissance; } }
 
         public Personne(string nom, string prenom, DateTime dateNaissance)
         {
@@ -23,10 +23,9 @@ namespace ExoPolymorphisme
             this.dateNaissance = dateNaissance;
         }
 
-        public string Afficher()
+        public virtual void Afficher()
         {
-            return "Depuis la classe Personne =>\n Nom : " + Nom + ";\nPrénom : " + Prenom + ";\nDate de naissance : " + DateNaissance;
+            Console.WriteLine("Depuis la classe Personne =>\n Nom : " + Nom + ";\nPrénom : " + Prenom + ";\nDate de naissance : " + DateNaissance);
         }
-
     }
 }

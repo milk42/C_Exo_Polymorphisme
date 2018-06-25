@@ -1,1 +1,6 @@
 M:\Visual Studio 2015\Exo_Souleimane\ExoPolymorphisme\ExoPolymorphisme\bin\Debug\ExoPolymorphisme.exe.config
+M:\Visual Studio 2015\Exo_Souleimane\ExoPolymorphisme\ExoPolymorphisme\obj\Debug\ExoPolymorphisme.csprojResolveAssemblyReference.cache
+M:\Visual Studio 2015\Exo_Souleimane\ExoPolymorphisme\ExoPolymorphisme\bin\Debug\ExoPolymorphisme.exe
+M:\Visual Studio 2015\Exo_Souleimane\ExoPolymorphisme\ExoPolymorphisme\bin\Debug\ExoPolymorphisme.pdb
+M:\Visual Studio 2015\Exo_Souleimane\ExoPolymorphisme\ExoPolymorphisme\obj\Debug\ExoPolymorphisme.exe
+M:\Visual Studio 2015\Exo_Souleimane\ExoPolymorphisme\ExoPolymorphisme\obj\Debug\ExoPolymorphisme.pdb

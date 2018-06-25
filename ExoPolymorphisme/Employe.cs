@@ -8,18 +8,20 @@ namespace ExoPolymorphisme
 {
     class Employe : Personne
     {
-        private int salaire;
+        private double salaire;
 
         public int Salaire { get { return this.Salaire; } }
 
-        public Employe(string nom, string prenom, string date_naissance, int salaire) : base(nom, prenom, date_naissance)
+        public Employe(string nom, string prenom, DateTime dateNaissance, double salaire) : base(nom, prenom, dateNaissance)
         {
+            this.salaire = salaire;
         }
 
-        public override string Afficher()
+        public override void Afficher()
         {
             // redéfinir en ajoutant salaire
-            return "Depuis la classe Personne =>\n Nom : " + Nom + ";\nPrénom : " + Prenom + ";\nDate de naissance : " + Date_naissance + ";\nSalaire = " + salaire;
+            base.Afficher();
+            Console.WriteLine($" Salaire : {salaire}"); 
         }
 
     }

@@ -11,14 +11,16 @@ namespace ExoPolymorphisme
         private string service;
 
         public string Service { get { return this.Service; } }
-        public Chef(string nom, string prenom, string date_naissance, int salaire, string service) : base(nom, prenom, date_naissance, salaire)
+        public Chef(string nom, string prenom, DateTime dateNaissance, double salaire, string service) : base(nom, prenom, dateNaissance, salaire)
         {
+            this.service = service;
         }
 
-        public override string Afficher()
+        public override void Afficher()
         {
             // redéfinir en ajoutant service
-            return base.Afficher();
+             base.Afficher();
+            Console.WriteLine($" Sevice : {this.service}");
         }
     }
 }
